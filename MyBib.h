@@ -35,7 +35,7 @@ void cabeca(){
 
 void menu(){
 	
-	printf("\n\nESCOLHA UMA OP«√O ENTRE:"
+	printf("\n\nESCOLHA UMA OP√á√ÉO ENTRE:"
 	"\n\t1 -\tCERVEJAS"
 	"\n\t2 -\tDRINKS"
 	"\n\t3 -\tCOMIDINHAS\n\n");
@@ -52,7 +52,7 @@ float cervejas(int n, int quant){
 	"\n\n3 - Ipa\t\t\tR$8,00"
 	"\n\n4 - Saison\t\tR$10,00"
 	"\n____________________________________________________________\n"
-	"\n\n\nDigite sua opÁ„o: \n\n");
+	"\n\n\nDigite sua op√ß√£o: \n\n");
 	scanf("%i", &n);
 	if(n ==1){
 		preco = 5;
@@ -83,11 +83,11 @@ float drinks(int n, int quant){
 	"\n\n2 - Ave Mary\t\t\tR$10,00"
 	"\n\tSuco de tomate, tequila e pimenta."
 	"\n\n3 - Caipirinha\t\t\tR$4,00"
-	"\n\tUm cl·ssico, especial pro Brun„o."
+	"\n\tUm cl√°ssico, especial pro Brun√£o."
 	"\n\n4 - Agua\t\t\tR$10,00"
 	"\n\n5 - Refri/Suco\t\t\tR$15,00"
 	"\n____________________________________________________________\n"
-	"\n\n\nDigite sua opÁ„o: \n\n");
+	"\n\n\nDigite sua op√ß√£o: \n\n");
 	scanf("%i", &n);
 	if(n ==1){
 		preco = 7;
@@ -119,13 +119,13 @@ float comidas(int n, int quant){
 	"\n\n1 - Coxinha\t\t\t\tR$ 4,00"
 	"\n\tCoxinha DA TOPE."
 	"\n\n2 - Bolinho de aipim\t\t\tR$4,00"
-	"\n\tTambÈm È bem TOPE."
+	"\n\tTamb√©m √© bem TOPE."
 	"\n\n3 - Montanha de bata\t\t\tR$17,00"
 	"\n\tBatata frita com queijo, e mais queijo. TOPZERA."
 	"\n\n4 - Empadinha\t\t\t\tR$6,00"
 	"\n\tEmpadinha vegetariana da bem boa, TOPZS"
 	"\n____________________________________________________________\n"
-	"\n\n\nDigite sua opÁ„o: \n\n");
+	"\n\n\nDigite sua op√ß√£o: \n\n");
 	scanf("%i", &n);
 	if(n ==1){
 		preco = 4;
@@ -145,4 +145,10 @@ float comidas(int n, int quant){
 	return total;
 }
 
+void printVet(int *vet, int n){
+	int i;
+	for(i=0; i<n; i++){
+		printf("%i\n", vet[i]);
+	}
+}
 
